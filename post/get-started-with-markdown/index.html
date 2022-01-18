@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>题解 | YUBlog</title>
+<title>Markdown入门 | YUBlog</title>
 <meta name="description" content="一位普通的OIer" />
 <link rel="shortcut icon" href="https://myqf1234.github.io/favicon.ico">
 <link rel="stylesheet" href="https://myqf1234.github.io/styles/main.css">
@@ -14,11 +14,14 @@
 <script src="https://myqf1234.github.io/media/js/view-image.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="安利一下我的blog
+Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已..." />
+    <meta name="keywords" content="Markdown,教程" />
+    <script src="https://myqf1234.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://myqf1234.github.io/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -85,58 +88,195 @@
         </div>
       </div>
 
-      <main id="home" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
-        <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile widget_epcl_related_articles">
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('/media/images/gridea.jpg');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2022-01-18"><i class="fa fa-calendar"></i><span class="lately">2 小时前</span></time>
+              
+              <a href="https://myqf1234.github.io/post/get-started-with-markdown/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/get-started-with-markdown/"> </span>
+              </a>
+              <span id="/get-started-with-markdown/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
                 
-            <!-- start: .articles -->
-            <div class="main-article post">
-  <h2 class="year"># 题解</h2>
-    
-      <article class="item default grid-33 tablet-grid-50 np-mobile">
-        <a href="https://myqf1234.github.io/post/solution-uva1149/" class="thumb hover-effect">
-          <span class="fullimage cover" style="display: block;background-image: url('https://s4.ax1x.com/2022/01/18/7wlQNq.png');"></span>
-        </a>
-        <div class="info gradient-effect">
-          <time datetime="2022-01-18">2022-01-18</time>
-          <h4 class="title usmall">
-            <a href="https://myqf1234.github.io/post/solution-uva1149/">[洛谷]UVA1149题解</a>
-          </h4>
-        </div>
-      </article>
+                      <a href="https://myqf1234.github.io/tag/markdown/" class="ctag ctag-0 ctag-markdown" aria-label="">Markdown</a>
+                    
+                      <a href="https://myqf1234.github.io/tag/technical/" class="ctag ctag-1 ctag-technical" aria-label="">教程</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">Markdown入门</h1>
+            </div>
+          </div>
+        </div>  
 
-    
-      <article class="item default grid-33 tablet-grid-50 np-mobile">
-        <a href="https://myqf1234.github.io/post/solution-cf1591a/" class="thumb hover-effect">
-          <span class="fullimage cover" style="display: block;background-image: url('https://s4.ax1x.com/2022/01/18/7wlQNq.png');"></span>
-        </a>
-        <div class="info gradient-effect">
-          <time datetime="2022-01-18">2022-01-18</time>
-          <h4 class="title usmall">
-            <a href="https://myqf1234.github.io/post/solution-cf1591a/">[洛谷]CF1591A题解</a>
-          </h4>
-        </div>
-      </article>
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p><a href="https://myqf1234.github.io/">安利一下我的blog</a></p>
+<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，许多网站都广泛使用Markdown来撰写帮助文档或是用于论坛上发表消息。 如GitHub、Reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge、简书等，甚至还能被使用来撰写电子书。</p>
+<p><strong>Let's go!</strong></p>
+<h2 id="换行">换行</h2>
+<p>Markdown不同于其他文本编辑器，<strong>Markdown一个换行实际为一个空格，Markdown只有两个及两个以上的换行符实际为一个换行</strong>。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">this is line 1
+this is line 2
+</code></pre>
+<p>显示：</p>
+<p>this is line 1<br>
+this is line 2</p>
+<p>示例：</p>
+<pre><code class="language-markdown">this is line 1
 
-    
-    <div class="clear"></div>
-</div>
-            <!-- end: .articles -->
+this is line 2
+</code></pre>
+<p>显示：</p>
+<p>this is line 1</p>
+<p>this is line 2</p>
+<h2 id="标题">标题：</h2>
+<p>Markdown支持<strong>H1至H6</strong>的标题，分别在前面<strong>插入1~6个#符号</strong>即可。</p>
+<p>示例：</p>
+<pre><code class="language-markdown"># H1 标题
+## H2 标题
+### H3 标题
+#### H4 标题
+##### H5 标题
+###### H6 标题
+</code></pre>
+<p>显示：</p>
+<h1 id="h1-标题">H1 标题</h1>
+<h2 id="h2-标题">H2 标题</h2>
+<h3 id="h3-标题">H3 标题</h3>
+<h4 id="h4-标题">H4 标题</h4>
+<h5 id="h5-标题">H5 标题</h5>
+<h6 id="h6-标题">H6 标题</h6>
+<p><strong>ps：请不要使用大量的H1或H2标题，否则会让文章显得不美观，还会给读者带来困扰。</strong></p>
+<h2 id="文字强调">文字强调：</h2>
+<p>一般粗体或斜体表示重要的内容。在Markdown语法中，我们可以用下划线<code>_</code>或星号<code>*</code>表示<strong>粗体</strong>或<em>斜体</em>。单下划线或星号表示<em>斜体</em>，双下划线或星号表示<strong>粗体</strong>，而三个星号或三个下划线表示***加粗斜体***。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">*这是一个斜体*
+
+_这是一个斜体_
+
+**这是一个粗体**
+
+__这是一个粗体__
+
+***这是一个加粗斜体***
+
+___这是一个加粗斜体___
+</code></pre>
+<p>显示：</p>
+<p><em>这是一个斜体</em></p>
+<p><em>这是一个斜体</em></p>
+<p><strong>这是一个粗体</strong></p>
+<p><strong>这是一个粗体</strong></p>
+<p><em><strong>这是一个加粗斜体</strong></em></p>
+<p><em><strong>这是一个加粗斜体</strong></em></p>
+<p>文本中我们经常要删除一段文本，使用<code>~~</code>删除线可以达到删除的效果。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">~~要删除的一段文本~~
+</code></pre>
+<p>显示：</p>
+<p><s>要删除的一段文本</s></p>
+<p>文章中经常会更改字体，更改颜色，由于markdown没有此功能，所以我们用html实现此功能。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">&lt;font face=&quot;黑体&quot;&gt;黑体&lt;/font&gt;
+
+&lt;font face=&quot;微软雅黑&quot;&gt;微软雅黑&lt;/font&gt;
+
+&lt;font face=&quot;STCAIYUN&quot;&gt;华文彩云&lt;/font&gt;
+
+&lt;/font&gt;&lt;font color=red&gt;红色&lt;/font&gt;
+
+&lt;font color=#008000&gt;绿色&lt;/font&gt;
+
+&lt;font color=yellow&gt;黄色&lt;/font&gt;
+
+&lt;font color=Blue&gt;蓝色&lt;/font&gt;
+
+&lt;font color= #871F78&gt;紫色&lt;/font&gt;
+
+&lt;font color= #DCDCDC&gt;浅灰色&lt;/font&gt;
+</code></pre>
+<p>实现：</p>
+<p><font face="黑体">黑体</font></p>
+<p><font face="微软雅黑">微软雅黑</font></p>
+<p><font face="STCAIYUN">华文彩云</font></p>
+<p></font><font color=red>红色</font></p>
+<p><font color=#008000>绿色</font></p>
+<p><font color=yellow>黄色</font></p>
+<p><font color=Blue>蓝色</font></p>
+<p><font color= #871F78>紫色</font></p>
+<p><font color= #DCDCDC>浅灰色</font></p>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://s4.ax1x.com/2022/01/18/7wlQNq.png');"></div>
+                 <a href="https://myqf1234.github.io/post/solution-uva1149/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2022-01-18">2022-01-18</time>
+                  <h4 class="title white no-margin">[洛谷]UVA1149题解</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://myqf1234.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
             
-                        <div class="epcl-pagination section">
-              <div class="nav">
+              <div id="comments" class="bg-white hosted ">
+                
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+<div class="clear"></div>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '214caa1ab5a86c46bbd5',
+    clientSecret: 'bbaf2f3e960ab916f71dc5a604be4126222db82d',
+    repo: 'myqf1234.github.io',
+    owner: 'myqf1234',
+    admin: ['myqf1234'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
                 
                 
               </div>
-            </div>
             
+
+            </div>
           </div>
-          </div>
-        </div>
       </main>
 
-        <footer id="footer" class="grid-container">
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -262,6 +402,9 @@
     <div class="clear"></div>
 
         
+
+      
+    <script src="https://myqf1234.github.io/media/js/functions-post.js"></script>
 
     </div>
     <!-- end: #wrapper -->

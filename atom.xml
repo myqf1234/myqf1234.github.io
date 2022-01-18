@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YUBlog</title>
-    <updated>2022-01-18T02:09:00.417Z</updated>
+    <updated>2022-01-18T10:49:08.312Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -10,6 +10,110 @@
     <logo>https://myqf1234.github.io/images/avatar.png</logo>
     <icon>https://myqf1234.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, YUBlog</rights>
+    <entry>
+        <title type="html"><![CDATA[Markdown入门]]></title>
+        <id>https://myqf1234.github.io/post/get-started-with-markdown/</id>
+        <link href="https://myqf1234.github.io/post/get-started-with-markdown/">
+        </link>
+        <updated>2022-01-18T09:18:38.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://myqf1234.github.io/">安利一下我的blog</a></p>
+<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，许多网站都广泛使用Markdown来撰写帮助文档或是用于论坛上发表消息。 如GitHub、Reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge、简书等，甚至还能被使用来撰写电子书。</p>
+<p><strong>Let's go!</strong></p>
+<h2 id="换行">换行</h2>
+<p>Markdown不同于其他文本编辑器，<strong>Markdown一个换行实际为一个空格，Markdown只有两个及两个以上的换行符实际为一个换行</strong>。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">this is line 1
+this is line 2
+</code></pre>
+<p>显示：</p>
+<p>this is line 1<br>
+this is line 2</p>
+<p>示例：</p>
+<pre><code class="language-markdown">this is line 1
+
+this is line 2
+</code></pre>
+<p>显示：</p>
+<p>this is line 1</p>
+<p>this is line 2</p>
+<h2 id="标题">标题：</h2>
+<p>Markdown支持<strong>H1至H6</strong>的标题，分别在前面<strong>插入1~6个#符号</strong>即可。</p>
+<p>示例：</p>
+<pre><code class="language-markdown"># H1 标题
+## H2 标题
+### H3 标题
+#### H4 标题
+##### H5 标题
+###### H6 标题
+</code></pre>
+<p>显示：</p>
+<h1 id="h1-标题">H1 标题</h1>
+<h2 id="h2-标题">H2 标题</h2>
+<h3 id="h3-标题">H3 标题</h3>
+<h4 id="h4-标题">H4 标题</h4>
+<h5 id="h5-标题">H5 标题</h5>
+<h6 id="h6-标题">H6 标题</h6>
+<p><strong>ps：请不要使用大量的H1或H2标题，否则会让文章显得不美观，还会给读者带来困扰。</strong></p>
+<h2 id="文字强调">文字强调：</h2>
+<p>一般粗体或斜体表示重要的内容。在Markdown语法中，我们可以用下划线<code>_</code>或星号<code>*</code>表示<strong>粗体</strong>或<em>斜体</em>。单下划线或星号表示<em>斜体</em>，双下划线或星号表示<strong>粗体</strong>，而三个星号或三个下划线表示***加粗斜体***。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">*这是一个斜体*
+
+_这是一个斜体_
+
+**这是一个粗体**
+
+__这是一个粗体__
+
+***这是一个加粗斜体***
+
+___这是一个加粗斜体___
+</code></pre>
+<p>显示：</p>
+<p><em>这是一个斜体</em></p>
+<p><em>这是一个斜体</em></p>
+<p><strong>这是一个粗体</strong></p>
+<p><strong>这是一个粗体</strong></p>
+<p><em><strong>这是一个加粗斜体</strong></em></p>
+<p><em><strong>这是一个加粗斜体</strong></em></p>
+<p>文本中我们经常要删除一段文本，使用<code>~~</code>删除线可以达到删除的效果。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">~~要删除的一段文本~~
+</code></pre>
+<p>显示：</p>
+<p><s>要删除的一段文本</s></p>
+<p>文章中经常会更改字体，更改颜色，由于markdown没有此功能，所以我们用html实现此功能。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">&lt;font face=&quot;黑体&quot;&gt;黑体&lt;/font&gt;
+
+&lt;font face=&quot;微软雅黑&quot;&gt;微软雅黑&lt;/font&gt;
+
+&lt;font face=&quot;STCAIYUN&quot;&gt;华文彩云&lt;/font&gt;
+
+&lt;/font&gt;&lt;font color=red&gt;红色&lt;/font&gt;
+
+&lt;font color=#008000&gt;绿色&lt;/font&gt;
+
+&lt;font color=yellow&gt;黄色&lt;/font&gt;
+
+&lt;font color=Blue&gt;蓝色&lt;/font&gt;
+
+&lt;font color= #871F78&gt;紫色&lt;/font&gt;
+
+&lt;font color= #DCDCDC&gt;浅灰色&lt;/font&gt;
+</code></pre>
+<p>实现：</p>
+<p><font face="黑体">黑体</font></p>
+<p><font face="微软雅黑">微软雅黑</font></p>
+<p><font face="STCAIYUN">华文彩云</font></p>
+<p></font><font color=red>红色</font></p>
+<p><font color=#008000>绿色</font></p>
+<p><font color=yellow>黄色</font></p>
+<p><font color=Blue>蓝色</font></p>
+<p><font color= #871F78>紫色</font></p>
+<p><font color= #DCDCDC>浅灰色</font></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[洛谷]UVA1149题解]]></title>
         <id>https://myqf1234.github.io/post/solution-uva1149/</id>
