@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YUBlog</title>
-    <updated>2022-01-18T01:01:56.448Z</updated>
+    <updated>2022-01-18T02:09:00.417Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -10,6 +10,74 @@
     <logo>https://myqf1234.github.io/images/avatar.png</logo>
     <icon>https://myqf1234.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, YUBlog</rights>
+    <entry>
+        <title type="html"><![CDATA[[洛谷]UVA1149题解]]></title>
+        <id>https://myqf1234.github.io/post/solution-uva1149/</id>
+        <link href="https://myqf1234.github.io/post/solution-uva1149/">
+        </link>
+        <updated>2022-01-18T01:19:21.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
+<hr>
+<p>看一眼<s>算法标签</s>就知道了是贪心</p>
+<p>ps:文章翻译有些错误</p>
+<blockquote>
+<p>最后一行是包裹的容量</p>
+</blockquote>
+<p>应该是</p>
+<blockquote>
+<p>第二行是包裹的容量</p>
+</blockquote>
+<h1 id="解题思路">解题思路</h1>
+<ul>
+<li>
+<p>对物品数组按<strong>体积</strong>由大往小排序</p>
+</li>
+<li>
+<p>用两个变量当前指针和后指针</p>
+</li>
+<li>
+<p>如果第一个和最后一个能装到箱子里，计数器 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mord">1</span></span></span></span> ，前指针向后挪一位，后指针向前挪一位。否则只能装大的，计数器 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mord">1</span></span></span></span> ，并且<strong>前指针要向后挪一位</strong>。</p>
+</li>
+<li>
+<p>重复循环直到前指针大于或等于后指针，输出结果。</p>
+</li>
+</ul>
+<h1 id="流程图自己做的有点丑">流程图(自己做的，有点丑)</h1>
+<figure data-type="image" tabindex="1"><img src="https://s4.ax1x.com/2021/12/25/TU8R3t.png" alt="" loading="lazy"></figure>
+<h1 id="献上代码">献上代码</h1>
+<p>核心代码</p>
+<pre><code class="language-cpp">cin&gt;&gt;n;
+memset(V,0,sizeof(V));
+p1=1,p2=n,cnt=0;
+初始化
+cin&gt;&gt;v;
+for(int i=1;i&lt;=n;i++){
+    cin&gt;&gt;V[i];
+}
+数据输入
+sort(V+1,V+n+1,greater&lt;int&gt;()); 排序
+while(true){ 循环处理
+    if(p1==p2||p1&gt;p2){ 结束了
+    	cnt++;  因为还有物品没装所以++
+        cout&lt;&lt;cnt&lt;&lt;endl; 输出解
+        break;
+    }
+    if(V[p1]+V[p2]&lt;=v){ 装得下两个
+        cnt++;
+        p1++,p2--;
+    }
+    else{  只能装大的
+        cnt++;
+        p1++;
+    }
+}
+</code></pre>
+<p>完整代码</p>
+<p><a href="https://www.luogu.com.cn/paste/mvw6v972">这里</a></p>
+<p><s>Warning:有防抄袭手段,请勿抄袭!</s></p>
+<p>谢谢！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[洛谷]CF1591A题解]]></title>
         <id>https://myqf1234.github.io/post/solution-cf1591a/</id>

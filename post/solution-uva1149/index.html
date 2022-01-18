@@ -1,8 +1,8 @@
 <html>
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>我的朋友们 | YUBlog</title>
+<title>[洛谷]UVA1149题解 | YUBlog</title>
 <meta name="description" content="一位普通的OIer" />
 <link rel="shortcut icon" href="https://myqf1234.github.io/favicon.ico">
 <link rel="stylesheet" href="https://myqf1234.github.io/styles/main.css">
@@ -14,11 +14,33 @@
 <script src="https://myqf1234.github.io/media/js/view-image.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="此题解在洛谷已通过审核，请勿复制代码！
+
+看一眼算法标签就知道了是贪心
+ps:文章翻译有些错误
+
+最后一行是包裹的容量
+
+应该是
+
+第二行是包裹的容量
+
+解题思路
+
+
+对物品数组按体积由大往小排序
+
+
+用两个变量当前指针和后指针
+
+
+如果第..." />
+    <meta name="keywords" content="C/C++,洛谷,题解" />
+    <script src="https://myqf1234.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://myqf1234.github.io/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -85,24 +107,161 @@
         </div>
       </div>
 
-      <main id="friends" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://s4.ax1x.com/2022/01/18/7wlQNq.png');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2022-01-18"><i class="fa fa-calendar"></i><span class="lately">1 小时前</span></time>
+              
+              <a href="https://myqf1234.github.io/post/solution-uva1149/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/solution-uva1149/"> </span>
+              </a>
+              <span id="/solution-uva1149/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://myqf1234.github.io/tag/c-cpp/" class="ctag ctag-0 ctag-c-cpp" aria-label="">C/C++</a>
+                    
+                      <a href="https://myqf1234.github.io/tag/luogu/" class="ctag ctag-1 ctag-luogu" aria-label="">洛谷</a>
+                    
+                      <a href="https://myqf1234.github.io/tag/solution/" class="ctag ctag-2 ctag-solution" aria-label="">题解</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">[洛谷]UVA1149题解</h1>
+            </div>
+          </div>
+        </div>  
+
         <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile widget_epcl_related_articles">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
+<hr>
+<p>看一眼<s>算法标签</s>就知道了是贪心</p>
+<p>ps:文章翻译有些错误</p>
+<blockquote>
+<p>最后一行是包裹的容量</p>
+</blockquote>
+<p>应该是</p>
+<blockquote>
+<p>第二行是包裹的容量</p>
+</blockquote>
+<h1 id="解题思路">解题思路</h1>
+<ul>
+<li>
+<p>对物品数组按<strong>体积</strong>由大往小排序</p>
+</li>
+<li>
+<p>用两个变量当前指针和后指针</p>
+</li>
+<li>
+<p>如果第一个和最后一个能装到箱子里，计数器 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mord">1</span></span></span></span> ，前指针向后挪一位，后指针向前挪一位。否则只能装大的，计数器 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mord">1</span></span></span></span> ，并且<strong>前指针要向后挪一位</strong>。</p>
+</li>
+<li>
+<p>重复循环直到前指针大于或等于后指针，输出结果。</p>
+</li>
+</ul>
+<h1 id="流程图自己做的有点丑">流程图(自己做的，有点丑)</h1>
+<figure data-type="image" tabindex="1"><img src="https://s4.ax1x.com/2021/12/25/TU8R3t.png" alt="" loading="lazy"></figure>
+<h1 id="献上代码">献上代码</h1>
+<p>核心代码</p>
+<pre><code class="language-cpp">cin&gt;&gt;n;
+memset(V,0,sizeof(V));
+p1=1,p2=n,cnt=0;
+初始化
+cin&gt;&gt;v;
+for(int i=1;i&lt;=n;i++){
+    cin&gt;&gt;V[i];
+}
+数据输入
+sort(V+1,V+n+1,greater&lt;int&gt;()); 排序
+while(true){ 循环处理
+    if(p1==p2||p1&gt;p2){ 结束了
+    	cnt++;  因为还有物品没装所以++
+        cout&lt;&lt;cnt&lt;&lt;endl; 输出解
+        break;
+    }
+    if(V[p1]+V[p2]&lt;=v){ 装得下两个
+        cnt++;
+        p1++,p2--;
+    }
+    else{  只能装大的
+        cnt++;
+        p1++;
+    }
+}
+</code></pre>
+<p>完整代码</p>
+<p><a href="https://www.luogu.com.cn/paste/mvw6v972">这里</a></p>
+<p><s>Warning:有防抄袭手段,请勿抄袭!</s></p>
+<p>谢谢！</p>
 
-          <div class="widget_tag_cloud tagcloud">
-          
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://s4.ax1x.com/2022/01/18/7wlQNq.png');"></div>
+                 <a href="https://myqf1234.github.io/post/solution-cf1591a/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2022-01-18">2022-01-18</time>
+                  <h4 class="title white no-margin">[洛谷]CF1591A题解</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://myqf1234.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
             
-          
-          </div>
-        </div>
+              <div id="comments" class="bg-white hosted ">
+                
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-        </div>
+<div id="gitalk-container"></div>
+<div class="clear"></div>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '214caa1ab5a86c46bbd5',
+    clientSecret: 'bbaf2f3e960ab916f71dc5a604be4126222db82d',
+    repo: 'myqf1234.github.io',
+    owner: 'myqf1234',
+    admin: ['myqf1234'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+                
+                
+              </div>
+            
+
+            </div>
           </div>
-        </div>
       </main>
 
-        <footer id="footer" class="grid-container">
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -222,6 +381,9 @@
     <div class="clear"></div>
 
         
+
+      
+    <script src="https://myqf1234.github.io/media/js/functions-post.js"></script>
 
     </div>
     <!-- end: #wrapper -->
