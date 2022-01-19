@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YUBlog</title>
-    <updated>2022-01-18T10:49:08.312Z</updated>
+    <updated>2022-01-19T11:09:40.422Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -11,13 +11,12 @@
     <icon>https://myqf1234.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, YUBlog</rights>
     <entry>
-        <title type="html"><![CDATA[Markdown入门]]></title>
+        <title type="html"><![CDATA[Markdown入门篇]]></title>
         <id>https://myqf1234.github.io/post/get-started-with-markdown/</id>
         <link href="https://myqf1234.github.io/post/get-started-with-markdown/">
         </link>
         <updated>2022-01-18T09:18:38.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="https://myqf1234.github.io/">安利一下我的blog</a></p>
-<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，许多网站都广泛使用Markdown来撰写帮助文档或是用于论坛上发表消息。 如GitHub、Reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge、简书等，甚至还能被使用来撰写电子书。</p>
+        <content type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，许多网站都广泛使用Markdown来撰写帮助文档或是用于论坛上发表消息。 如GitHub、Reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge、简书等，甚至还能被使用来撰写电子书。</p>
 <p><strong>Let's go!</strong></p>
 <h2 id="换行">换行</h2>
 <p>Markdown不同于其他文本编辑器，<strong>Markdown一个换行实际为一个空格，Markdown只有两个及两个以上的换行符实际为一个换行</strong>。</p>
@@ -26,8 +25,7 @@
 this is line 2
 </code></pre>
 <p>显示：</p>
-<p>this is line 1<br>
-this is line 2</p>
+<p>this is line 1 this is line 2</p>
 <p>示例：</p>
 <pre><code class="language-markdown">this is line 1
 
@@ -112,6 +110,149 @@ ___这是一个加粗斜体___
 <p><font color=Blue>蓝色</font></p>
 <p><font color= #871F78>紫色</font></p>
 <p><font color= #DCDCDC>浅灰色</font></p>
+<p><strong>注意：某些Markdown编辑器不支持内嵌html功能，比如洛谷Markdown编辑器，所以在洛谷分站中采用图片代替！！！</strong></p>
+<h2 id="代码块">代码块：</h2>
+<p>在使用blog时，我们有时需要插入一段代码，直接插入会让代码十分不美观，读者的体验也不好，所以我们要规范使用代码块。</p>
+<p>行内代码块：通过<code>``</code>行内代码块实现。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">`include&lt;iostream&gt;`通常作为C++代码的第一行，`&lt;iostream&gt;`是输入输出流。
+</code></pre>
+<p>显示：</p>
+<p><code>#include&lt;iostream&gt;</code>通常作为C++代码的第一行，<code>&lt;iostream&gt;</code>是输入输出流。</p>
+<p>有时我们需要使用一大段代码，使用<code>```</code>即可。在第一个<code>```</code>后面加入你想要的语言即可。如<code>cpp</code>,<code>pascal</code>,<code>python</code>,<code>markdown</code>,<code>latex</code>等。<strong>注意，C++应为<code>cpp</code>！</strong></p>
+<p>示例：<br>
+```cpp</p>
+<p>#include&lt;iostream&gt;</p>
+<p>```</p>
+<p>显示：</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+</code></pre>
+<h2 id="有序列表与无序列表">有序列表与无序列表</h2>
+<p>显而易见，用处无需多介绍。是用<code>-</code>、<code>*</code>或<code>+</code>表示。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">- apple
+- orange
+- banana
+- grape
+
++ apple
++ orange
++ banana
++ grape
+
+* apple
+* orange
+* banana
+* grape
+</code></pre>
+<p>均显示为：</p>
+<ul>
+<li>apple</li>
+<li>orange</li>
+<li>banana</li>
+<li>grape</li>
+</ul>
+<p>有序列表示例：</p>
+<pre><code class="language-markdown">1. one
+2. two
+3. three
+4. four
+
+或
+
+1. one
+1. two
+1. three
+1. four
+</code></pre>
+<p>均显示为：</p>
+<ol>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+</ol>
+<h2 id="引用">引用</h2>
+<p>Markdown中引用为<code>&gt;</code>符号。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">&gt; 一级引用
+&gt;&gt; 二级引用
+&gt;&gt;&gt; 三级引用
+&gt;&gt;&gt;&gt; 四级引用
+&gt;&gt;&gt;&gt;&gt; 五级引用
+&gt;&gt;&gt;&gt;&gt;&gt; 六级引用
+</code></pre>
+<p>显示：</p>
+<blockquote>
+<p>一级引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>三级引用</p>
+<blockquote>
+<p>四级引用</p>
+<blockquote>
+<p>五级引用</p>
+<blockquote>
+<p>六级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="链接与图片">链接与图片</h2>
+<p>文章中，我们时不时要放一些链接，Markdown中以<code>[链接标题](链接路径_http/https)</code>使用链接。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">[我的个人博客](https://myqf1234.github.io)
+</code></pre>
+<p>显示：</p>
+<p><a href="https://myqf1234.github.io">我的个人博客</a></p>
+<p>图片的语法与链接差不多，只是在前面加了个<code>!</code>，应为<code>![图片下方文字](图片路径_http/https)</code></p>
+<p>示例：</p>
+<pre><code class="language-markdown">![Markdown-logo](https://assets.t3n.sc/news/wp-content/uploads/2013/07/markdown_vorschau.jpg)
+</code></pre>
+<p>显示：</p>
+<figure data-type="image" tabindex="1"><img src="https://assets.t3n.sc/news/wp-content/uploads/2013/07/markdown_vorschau.jpg" alt="Markdown-logo" loading="lazy"></figure>
+<p>Markdown中还可以使用自动链接，在链接前后包上尖括号即可。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">&lt;https://myqf1234.github.io&gt;
+</code></pre>
+<p>显示：</p>
+<p><a href="https://myqf1234.github.io">https://myqf1234.github.io</a></p>
+<p>图片链接：</p>
+<p>示例：</p>
+<pre><code class="language-markdown">[![Markdown-search](https://assets.t3n.sc/news/wp-content/uploads/2013/07/markdown_vorschau.jpg)](https://www.baidu.com/s?ie=utf-8&amp;wd=Markdown)
+</code></pre>
+<p>显示：</p>
+<figure data-type="image" tabindex="2"><a href="https://www.baidu.com/s?ie=utf-8&amp;wd=Markdown"><img src="https://assets.t3n.sc/news/wp-content/uploads/2013/07/markdown_vorschau.jpg" alt="Markdown-search" loading="lazy"></a></figure>
+<h2 id="分割线">分割线</h2>
+<p>分割线可以使用<code>*</code>或<code>-</code>，但是行内不能有其他的多余字符。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">***   ***   ***
+**********************************************
+---   ---   ---
+----------------------------------------------
+</code></pre>
+<p>显示：</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="转义字符">转义字符\</h2>
+<p>在Markdown中，比如我们想使用<code>*</code>做装饰，而并非斜体，可以使用转义字符<code>\</code>。</p>
+<p>示例：</p>
+<pre><code class="language-markdown">\*A Text\*
+
+\~A Text\~
+</code></pre>
+<p>显示：</p>
+<p>*A Text*</p>
+<p>~A Text~</p>
+<h2 id="更多功能">更多功能</h2>
+<p>敬请期待Markdown进阶篇！</p>
+<p>点个赞吧！</p>
+<p><code>Bye!</code></p>
 ]]></content>
     </entry>
     <entry>
