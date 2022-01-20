@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://myqf1234.github.io</id>
     <title>YUBlog</title>
-    <updated>2022-01-20T03:17:14.252Z</updated>
+    <updated>2022-01-20T03:30:18.629Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://myqf1234.github.io"/>
+    <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
     <subtitle>一位普通的OIer</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://myqf1234.github.io/images/avatar.png</logo>
+    <icon>https://myqf1234.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, YUBlog</rights>
     <entry>
         <title type="html"><![CDATA[[洛谷]UVA483题解]]></title>
-        <id>http://localhost:4000/post/solution-uva483/</id>
-        <link href="http://localhost:4000/post/solution-uva483/">
+        <id>https://myqf1234.github.io/post/solution-uva483/</id>
+        <link href="https://myqf1234.github.io/post/solution-uva483/">
         </link>
         <updated>2022-01-20T02:32:58.000Z</updated>
         <content type="html"><![CDATA[<p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
@@ -64,8 +64,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown入门篇]]></title>
-        <id>http://localhost:4000/post/get-started-with-markdown/</id>
-        <link href="http://localhost:4000/post/get-started-with-markdown/">
+        <id>https://myqf1234.github.io/post/get-started-with-markdown/</id>
+        <link href="https://myqf1234.github.io/post/get-started-with-markdown/">
         </link>
         <updated>2022-01-18T09:18:38.000Z</updated>
         <content type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，许多网站都广泛使用Markdown来撰写帮助文档或是用于论坛上发表消息。 如GitHub、Reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge、简书等，甚至还能被使用来撰写电子书。</p>
@@ -309,8 +309,8 @@ ___这是一个加粗斜体___
     </entry>
     <entry>
         <title type="html"><![CDATA[[洛谷]UVA1149题解]]></title>
-        <id>http://localhost:4000/post/solution-uva1149/</id>
-        <link href="http://localhost:4000/post/solution-uva1149/">
+        <id>https://myqf1234.github.io/post/solution-uva1149/</id>
+        <link href="https://myqf1234.github.io/post/solution-uva1149/">
         </link>
         <updated>2022-01-18T01:19:21.000Z</updated>
         <content type="html"><![CDATA[<p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
@@ -377,8 +377,8 @@ while(true){ 循环处理
     </entry>
     <entry>
         <title type="html"><![CDATA[[洛谷]CF1591A题解]]></title>
-        <id>http://localhost:4000/post/solution-cf1591a/</id>
-        <link href="http://localhost:4000/post/solution-cf1591a/">
+        <id>https://myqf1234.github.io/post/solution-cf1591a/</id>
+        <link href="https://myqf1234.github.io/post/solution-cf1591a/">
         </link>
         <updated>2022-01-18T00:39:10.000Z</updated>
         <content type="html"><![CDATA[<p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
