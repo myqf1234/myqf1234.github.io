@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Markdown | YUBlog</title>
+<title>[洛谷]UVA483题解 | YUBlog</title>
 <meta name="description" content="一位普通的OIer" />
 <link rel="shortcut icon" href="https://myqf1234.github.io/favicon.ico">
 <link rel="stylesheet" href="https://myqf1234.github.io/styles/main.css">
@@ -14,11 +14,19 @@
 <script src="https://myqf1234.github.io/media/js/view-image.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="此题解在洛谷已通过审核，请勿复制代码！
+
+题目传送门
+水题
+看不懂stringstream，所以用了这种方法，【分析】可以直接用cin&gt;&gt;...读入。（cin遇到空格，回车，TAB停止读入
+比如
+I love you.会读入I ..." />
+    <meta name="keywords" content="C/C++,洛谷,题解" />
+    <script src="https://myqf1234.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://myqf1234.github.io/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -85,45 +93,145 @@
         </div>
       </div>
 
-      <main id="home" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
-        <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile widget_epcl_related_articles">
-                
-            <!-- start: .articles -->
-            <div class="main-article post">
-  <h2 class="year"># Markdown</h2>
-    
-      <article class="item default grid-33 tablet-grid-50 np-mobile">
-        <a href="https://myqf1234.github.io/post/get-started-with-markdown/" class="thumb hover-effect">
-          <span class="fullimage cover" style="display: block;background-image: url('https://s4.ax1x.com/2022/01/18/7BCmJs.png');"></span>
-        </a>
-        <div class="info gradient-effect">
-          <time datetime="2022-01-18">2022-01-18</time>
-          <h4 class="title usmall">
-            <a href="https://myqf1234.github.io/post/get-started-with-markdown/">Markdown入门篇</a>
-          </h4>
-        </div>
-      </article>
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
-    
-    <div class="clear"></div>
-</div>
-            <!-- end: .articles -->
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://s4.ax1x.com/2022/01/18/7wlQNq.png');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2022-01-20"><i class="fa fa-calendar"></i><span class="lately">4 分钟前</span></time>
+              
+              <a href="https://myqf1234.github.io/post/solution-uva483/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/solution-uva483/"> </span>
+              </a>
+              <span id="/solution-uva483/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://myqf1234.github.io/tag/c-cpp/" class="ctag ctag-0 ctag-c-cpp" aria-label="">C/C++</a>
+                    
+                      <a href="https://myqf1234.github.io/tag/luogu/" class="ctag ctag-1 ctag-luogu" aria-label="">洛谷</a>
+                    
+                      <a href="https://myqf1234.github.io/tag/solution/" class="ctag ctag-2 ctag-solution" aria-label="">题解</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">[洛谷]UVA483题解</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
+<hr>
+<p><a href="https://www.luogu.com.cn/problem/UVA483">题目传送门</a></p>
+<p><s>水题</s></p>
+<p>看不懂stringstream，所以用了这种方法，【分析】可以直接用cin&gt;&gt;...读入。（cin遇到空格，回车，TAB停止读入</p>
+<h3 id="比如">比如</h3>
+<p><code>I love you.</code>会读入<code>I</code> 和 <code>love</code> 和 <code>you.</code></p>
+<p>怎么实现？直接用</p>
+<pre><code class="language-cpp">string s;
+while(cin&gt;&gt;s){
+	/*语句段*/
+}
+</code></pre>
+<p>它会一直读入数据，直到EOF（输入中止结束符）</p>
+<p>百科</p>
+<p><a href="https://baike.baidu.com/item/EOF/1017800?fr=aladdin">https://baike.baidu.com/item/EOF/1017800?fr=aladdin</a></p>
+<p>模拟:（以<code>I love you.</code>为例：</p>
+<p>首先读入<code>I</code>，遇到空格，执行语句段，然后读入<code>love</code>……最后读入<code>you.</code>遇到EOF，结束。</p>
+<p><code>reverse(s.begin(),s.end());</code>：reverse：定义在<code>&lt;algorithm&gt;</code>中，指将字符串、数组等反转，<code>s.begin</code>和<code>s.end</code>是两个广义指针，分别指向s的开头和末尾。</p>
+<p>介绍一下<code>getchar</code>:</p>
+<p><code>getchar</code>原本的意思指读入一个字符，在这里可以把两个字符串之间的空格/回车”吃掉“，示例如下：</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/cppshwe1.png" alt="" loading="lazy"></figure>
+<p>之后怎么办？输出就好了。</p>
+<p>所以：</p>
+<p>CODE：：</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+#include&lt;string&gt; //string类型用
+#include&lt;cstdio&gt; //geichar()用
+#include&lt;algorithm&gt; //reverse()用
+//并不向大家推荐使用万能头，我们要明白每个头文件有什么用途。
+using namespace std;
+int main(){
+    string s;
+    while(cin&gt;&gt;s){
+        reverse(s.begin(),s.end());
+        cout&lt;&lt;s;
+        char ch=getchar();
+        cout&lt;&lt;ch;
+    }
+    return 0;
+}
+</code></pre>
+<p>Update：</p>
+<p>2021.5.29 重新编写对<code>getchar</code>的定义。</p>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://s4.ax1x.com/2022/01/18/7BCmJs.png');"></div>
+                 <a href="https://myqf1234.github.io/post/get-started-with-markdown/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2022-01-18">2022-01-18</time>
+                  <h4 class="title white no-margin">Markdown入门篇</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://myqf1234.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
             
-                        <div class="epcl-pagination section">
-              <div class="nav">
+              <div id="comments" class="bg-white hosted ">
+                
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+<div class="clear"></div>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '214caa1ab5a86c46bbd5',
+    clientSecret: 'bbaf2f3e960ab916f71dc5a604be4126222db82d',
+    repo: 'myqf1234.github.io',
+    owner: 'myqf1234',
+    admin: ['myqf1234'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
                 
                 
               </div>
-            </div>
             
+
+            </div>
           </div>
-          </div>
-        </div>
       </main>
 
-        <footer id="footer" class="grid-container">
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -251,6 +359,9 @@
     <div class="clear"></div>
 
         
+
+      
+    <script src="https://myqf1234.github.io/media/js/functions-post.js"></script>
 
     </div>
     <!-- end: #wrapper -->
