@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YU Wikis</title>
-    <updated>2022-01-22T23:31:54.871Z</updated>
+    <updated>2022-01-23T06:17:08.689Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -305,6 +305,13 @@ ___这是一个加粗斜体___
 <p>敬请期待Markdown进阶篇！</p>
 <p>点个赞吧！</p>
 <p><code>Bye!</code></p>
+<p>注：本文由自己的原创理解加上参考一些资料组成，如有不足、勘误或侵犯版权，请在评论区或联系<a href="https://yuwikis.com/post/about">我</a>指正改进，谢谢！</p>
+<p>参考资料：</p>
+<ol>
+<li><a href="https://www.luogu.com.cn/blog/luogu/how-to-use-markdown">https://www.luogu.com.cn/blog/luogu/how-to-use-markdown</a></li>
+<li><a href="https://markdown.com.cn/">https://markdown.com.cn/</a></li>
+<li><a href="https://www.bilibili.com/read/cv5975926/">https://www.bilibili.com/read/cv5975926/</a></li>
+</ol>
 ]]></content>
     </entry>
     <entry>
