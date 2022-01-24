@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YU Wikis</title>
-    <updated>2022-01-24T04:12:26.076Z</updated>
+    <updated>2022-01-24T04:19:41.993Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -11,22 +11,22 @@
     <icon>https://myqf1234.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, YU Wikis</rights>
     <entry>
-        <title type="html"><![CDATA[Gridea测试文章]]></title>
-        <id>https://myqf1234.github.io/post/gridea-ce-shi-wen-zhang/</id>
-        <link href="https://myqf1234.github.io/post/gridea-ce-shi-wen-zhang/">
+        <title type="html"><![CDATA[YUBlog更名为YU Wikis]]></title>
+        <id>https://myqf1234.github.io/post/announcement/</id>
+        <link href="https://myqf1234.github.io/post/announcement/">
         </link>
-        <updated>2022-01-24T04:10:46.000Z</updated>
-        <content type="html"><![CDATA[<p>tester</p>
+        <updated>2022-01-24T04:18:01.000Z</updated>
+        <content type="html"><![CDATA[<p>YUBlog正式更名为YU Wikis。同时网站域名由<a href="https://myqf1234.github.io">https://myqf1234.github.io</a>正式更名为<a href="https://yuwikis.com">https://yuwikis.com</a>。如有疑问，欢迎在评论区留言或联系<a href="https://yuwikis.com/post/about/">YU Wikis</a>。</p>
+<p>此公告。</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[YUBlog正式更名为YU Wikis]]></title>
-        <id>https://myqf1234.github.io/post/news/</id>
-        <link href="https://myqf1234.github.io/post/news/">
+        <title type="html"><![CDATA[Gridea测试文章]]></title>
+        <id>https://myqf1234.github.io/post/gridea-test/</id>
+        <link href="https://myqf1234.github.io/post/gridea-test/">
         </link>
-        <updated>2022-01-23T14:26:51.000Z</updated>
-        <content type="html"><![CDATA[<p>YUBlog正式更名为YU Wikis。同时网站域名由<a href="https://myqf1234.github.io">https://myqf1234.github.io</a>正式更名为<a href="https://yuwikis.com">https://yuwikis.com</a>。如有疑问，欢迎在评论区留言或联系<a href="https://yuwikis.com/post/about/">YU Wikis</a>。</p>
-<p>此公告。</p>
+        <updated>2022-01-24T04:10:46.000Z</updated>
+        <content type="html"><![CDATA[<p>tester</p>
 ]]></content>
     </entry>
     <entry>
