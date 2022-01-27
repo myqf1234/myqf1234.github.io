@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://myqf1234.github.io</id>
+    <id>http://localhost:4000</id>
     <title>YU Wikis</title>
-    <updated>2022-01-27T05:33:58.453Z</updated>
+    <updated>2022-01-27T05:51:35.609Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://myqf1234.github.io"/>
-    <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>一位普通的OIer</subtitle>
-    <logo>https://myqf1234.github.io/images/avatar.png</logo>
-    <icon>https://myqf1234.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2022, YU Wikis</rights>
     <entry>
         <title type="html"><![CDATA[NOI Linux 2.0的安装+体验]]></title>
-        <id>https://myqf1234.github.io/post/noilinux2/</id>
-        <link href="https://myqf1234.github.io/post/noilinux2/">
+        <id>http://localhost:4000/post/noilinux2/</id>
+        <link href="http://localhost:4000/post/noilinux2/">
         </link>
         <updated>2022-01-24T06:08:26.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>版权声明：本文为 <a href="https://yuwikis.com">YU Wikis</a> 原创，依据 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> 许可证进行授权，转载请附上出处链接及本声明。</strong></p>
+        <content type="html"><![CDATA[<p><strong>版权声明：本文为 <a href="https://yuwikis.com">YU Wikis</a> 原创，依据 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可证进行授权，转载请附上出处链接及本声明。</strong></p>
 <p>这是一位OIer的看法，文章源自无意间的一次点击。</p>
 <p>文章封面这张图是我在NOI Linux 2.0桌面上截的呵呵</p>
 <h1 id="起源">起源：</h1>
@@ -57,7 +57,7 @@
 <figure data-type="image" tabindex="7"><img src="https://s4.ax1x.com/2022/01/25/7HOhUe.png" alt="" loading="lazy"></figure>
 <p>之后为虚拟机命名，名字自己随便起，我这里就起NOI Linux 2.0吧。路径尽量选择系统盘以外的盘符，例如D盘<s>你的系统盘在D盘当我没说</s>，虚拟机是很占空间的，系统盘太满不是好习惯，点击下一步。</p>
 <figure data-type="image" tabindex="8"><img src="https://s4.ax1x.com/2022/01/25/7HXFbT.png" alt="" loading="lazy"></figure>
-<p>选择磁盘容量可以比建议容量大一些，比如我就选择了40GB，存储方式个人比较喜欢单个文件存储。加入你的磁盘空间比较紧张，可以选择20GB容量，如果经常在多台电脑之间移动文件，个人推荐拆分存储，点击下一步。</p>
+<p>选择磁盘容量可以比建议容量大一些，比如我就选择了40GB，存储方式个人比较喜欢单个文件存储。如果你的磁盘空间比较紧张，可以选择20GB容量，如果经常在多台电脑之间移动文件，个人推荐拆分存储，点击下一步。</p>
 <figure data-type="image" tabindex="9"><img src="https://s4.ax1x.com/2022/01/25/7bmz0U.png" alt="" loading="lazy"></figure>
 <p>再次检查配置，没有问题就可以点完成了！</p>
 <figure data-type="image" tabindex="10"><img src="https://s4.ax1x.com/2022/01/25/7bM139.png" alt="" loading="lazy"></figure>
@@ -69,7 +69,7 @@
 <figure data-type="image" tabindex="13"><img src="https://s4.ax1x.com/2022/01/25/7bGv8O.png" alt="" loading="lazy"></figure>
 <p>更新和其他软件时，安装就选正常安装，注意，<strong>一定要勾选掉安装Ubuntu时下载更新，否则需要安装很长时间</strong>，点击继续。</p>
 <figure data-type="image" tabindex="14"><img src="https://s4.ax1x.com/2022/01/25/7bwM1P.png" alt="" loading="lazy"></figure>
-<p>安装类型就选清除整个磁盘安装Ubuntu，毕竟是虚拟机嘛，无所谓了，<strong>如果你要安装双系统用，请不要选择此选项</strong>，点击现在安装。</p>
+<p><s>不知道为什么VMware Tools自己安装上了</s>安装类型就选清除整个磁盘安装Ubuntu，毕竟是虚拟机嘛，无所谓了，<strong>如果你要安装双系统用，请不要选择此选项</strong>，点击现在安装。</p>
 <figure data-type="image" tabindex="15"><img src="https://s4.ax1x.com/2022/01/26/7qYU2T.png" alt="" loading="lazy"></figure>
 <p>提示将以下改动写入磁盘吗，点击继续就可以了。</p>
 <figure data-type="image" tabindex="16"><img src="https://s4.ax1x.com/2022/01/26/7qYjsg.png" alt="" loading="lazy"></figure>
@@ -94,8 +94,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[YUBlog更名为YU Wikis]]></title>
-        <id>https://myqf1234.github.io/post/announcement/</id>
-        <link href="https://myqf1234.github.io/post/announcement/">
+        <id>http://localhost:4000/post/announcement/</id>
+        <link href="http://localhost:4000/post/announcement/">
         </link>
         <updated>2022-01-24T04:18:01.000Z</updated>
         <content type="html"><![CDATA[<p>YUBlog正式更名为YU Wikis。同时网站域名由<a href="https://myqf1234.github.io">https://myqf1234.github.io</a>正式更名为<a href="https://yuwikis.com">https://yuwikis.com</a>。如有疑问，欢迎在评论区留言或联系<a href="https://yuwikis.com/post/about/">YU Wikis</a>。</p>
@@ -104,8 +104,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Gridea测试文章]]></title>
-        <id>https://myqf1234.github.io/post/gridea-test/</id>
-        <link href="https://myqf1234.github.io/post/gridea-test/">
+        <id>http://localhost:4000/post/gridea-test/</id>
+        <link href="http://localhost:4000/post/gridea-test/">
         </link>
         <updated>2022-01-24T04:10:46.000Z</updated>
         <content type="html"><![CDATA[<p>tester</p>
@@ -113,8 +113,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[[洛谷]UVA483题解]]></title>
-        <id>https://myqf1234.github.io/post/solution-uva483/</id>
-        <link href="https://myqf1234.github.io/post/solution-uva483/">
+        <id>http://localhost:4000/post/solution-uva483/</id>
+        <link href="http://localhost:4000/post/solution-uva483/">
         </link>
         <updated>2022-01-20T02:32:58.000Z</updated>
         <content type="html"><![CDATA[<p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
@@ -165,8 +165,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown入门手册]]></title>
-        <id>https://myqf1234.github.io/post/get-started-with-markdown/</id>
-        <link href="https://myqf1234.github.io/post/get-started-with-markdown/">
+        <id>http://localhost:4000/post/get-started-with-markdown/</id>
+        <link href="http://localhost:4000/post/get-started-with-markdown/">
         </link>
         <updated>2022-01-18T09:18:38.000Z</updated>
         <content type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，许多网站都广泛使用Markdown来撰写帮助文档或是用于论坛上发表消息。 如GitHub、Reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge、简书等，甚至还能被使用来撰写电子书。</p>
@@ -417,8 +417,8 @@ ___这是一个加粗斜体___
     </entry>
     <entry>
         <title type="html"><![CDATA[[洛谷]UVA1149题解]]></title>
-        <id>https://myqf1234.github.io/post/solution-uva1149/</id>
-        <link href="https://myqf1234.github.io/post/solution-uva1149/">
+        <id>http://localhost:4000/post/solution-uva1149/</id>
+        <link href="http://localhost:4000/post/solution-uva1149/">
         </link>
         <updated>2022-01-18T01:19:21.000Z</updated>
         <content type="html"><![CDATA[<p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
@@ -485,8 +485,8 @@ while(true){ 循环处理
     </entry>
     <entry>
         <title type="html"><![CDATA[[洛谷]CF1591A题解]]></title>
-        <id>https://myqf1234.github.io/post/solution-cf1591a/</id>
-        <link href="https://myqf1234.github.io/post/solution-cf1591a/">
+        <id>http://localhost:4000/post/solution-cf1591a/</id>
+        <link href="http://localhost:4000/post/solution-cf1591a/">
         </link>
         <updated>2022-01-18T00:39:10.000Z</updated>
         <content type="html"><![CDATA[<p><strong>此题解在<a href="https://www.luogu.com.cn/">洛谷</a>已通过审核，请勿复制代码！</strong></p>
