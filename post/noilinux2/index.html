@@ -15,8 +15,10 @@
 <script src="https://myqf1234.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="这次的体验是一次
-" />
+    <meta name="description" content="版权声明：本文为 YU Wikis 原创，依据 CC BY-NC-ND 4.0 许可证进行授权，转载请附上出处链接及本声明。
+这是一位OIer的看法，文章源自无意间的一次点击。
+文章封面这张图是我在NOI Linux 2.0桌面上截的呵呵
+..." />
     <meta name="keywords" content="虚拟机,OI,Linux" />
     <script src="https://myqf1234.github.io/media/js/waterfall.min.js"></script>
     <script src="https://myqf1234.github.io/media/js/prism.min.js"></script>
@@ -78,7 +80,7 @@
       <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
         <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
           <div class="search-wrapper section">
-            <form id="gridea-search-form" data-update="1643005351570" action="/search/index.html" class="search-form" _lpchecked="1">
+            <form id="gridea-search-form" data-update="1643259729209" action="/search/index.html" class="search-form" _lpchecked="1">
               <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
               <button type="submit" class="submit" aria-label="Submit">
                 <i class="fa fa-search-line"></i>
@@ -91,9 +93,9 @@
       <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
         <div class="center content">
-          <div class="featured-image cover" style="background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.leixue.com%2Fuploads%2F2020%2F07%2FNOI-Linux.png%21760&amp;refer=http%3A%2F%2Fwww.leixue.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1645596327&amp;t=df38fcd1020ce2f4287a45d83b7eac7b');">
+          <div class="featured-image cover" style="background-image: url('https://s4.ax1x.com/2022/01/27/7XaS4H.png');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2022-01-24"><i class="fa fa-calendar"></i><span class="lately">1 小时前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2022-01-24"><i class="fa fa-calendar"></i><span class="lately">3 天前</span></time>
               
               <a href="https://myqf1234.github.io/post/noilinux2/#comments" class="comments meta-info" title="">
                 <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/noilinux2/"> </span>
@@ -121,7 +123,80 @@
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <p>这次的体验是一次</p>
+                  <p><strong>版权声明：本文为 <a href="https://yuwikis.com">YU Wikis</a> 原创，依据 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> 许可证进行授权，转载请附上出处链接及本声明。</strong></p>
+<p>这是一位OIer的看法，文章源自无意间的一次点击。</p>
+<p>文章封面这张图是我在NOI Linux 2.0桌面上截的呵呵</p>
+<h1 id="起源">起源：</h1>
+<p><strong>下文与主题关联性不大，如您时间紧张或抽出百忙的时间阅读此文章，请跳过此。</strong></p>
+<p>2021年X月X日，CSP报名时期，访问NOI官网报名时，没事翻NOI的主页，就看到的下面的这个：</p>
+<figure data-type="image" tabindex="1"><img src="https://s4.ax1x.com/2022/01/24/7oTA56.md.png" alt="7oTA56.md.png" loading="lazy"></figure>
+<p>这是什么，这不就是新的NOI Linux 2.0吗？好奇的我点开了链接，好奇地摸索了一番。但是……但是，我们省的比赛环境为Windows！😢😢😢……然后，我因为还要备战CSP，所以就吧这件事忘掉了，直到2022年X月X日，我没事访问了NOI官网，又想起来了NOI Linux 2.0……</p>
+<p>所以，我在空闲时间，送上了这份来迟了的文章，重温那特殊的Ubuntu发行版——NOI Linux 2.0。</p>
+<h1 id="安装noi-linux-20">安装NOI Linux 2.0</h1>
+<p><strong>如果您已经安装完成或只想了解NOI Linux 2.0的体验，请跳过此段。</strong></p>
+<p>安装镜像下载链接：<a href="https://noiresources.ccf.org.cn/ubuntu-noi-v2.0.iso">https://noiresources.ccf.org.cn/ubuntu-noi-v2.0.iso</a></p>
+<p>我在家里面下载只用了<s>4分钟(网速太快了，12.5MB/S)</s>，估计一般下载需要30分钟~1小时左右，网速慢一点的可能超过1小时，<strong>所以建议大家提前准备下载好，以免浪费太多的时间。</strong></p>
+<p>检查电脑规格：</p>
+<ol>
+<li>你的电脑必须是64位操作系统，且必须是基于x64的处理器。</li>
+<li>最重要的，网上许多教程没讲到的地方，你电脑的CPU必须支持并开启虚拟化，如果你的电脑为Mac，则无需检验此项。教程网上有很多，请自行搜索，本文不再多赘述。</li>
+<li>你的电脑的运行内存(机带RAM)建议至少8GB，16GB则更好，可用磁盘空间至少30GB以上。</li>
+</ol>
+<p>如何检查电脑的配置规格呢？我将以Windows10操作系统演示，其他系统操作方法差不多。</p>
+<p>Windows：按下Windows+R键打开运行，输入<code>ms-settings:</code>打开系统设置，依次点击系统→关于，找到设备规格，查看即可。然后双击桌面上的此电脑，检查剩余磁盘空间是否大于30GB。</p>
+<figure data-type="image" tabindex="2"><img src="https://s4.ax1x.com/2022/01/25/7HcG4g.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://s4.ax1x.com/2022/01/25/7HgkMn.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://s4.ax1x.com/2022/01/25/7HgOW4.png" alt="" loading="lazy"></figure>
+<p><strong>请尽量按照建议配置规格操作，否则可能会安装失败或发生更严重的问题。</strong></p>
+<p>安装虚拟机：</p>
+<p>本人推荐VMware Workstation 16 Pro，其特点为使用简单方便，功能齐全，可以在<a href="https://www.vmware.com/cn/products/workstation-pro.html">https://www.vmware.com/cn/products/workstation-pro.html</a>下载。</p>
+<p>附激活密钥：</p>
+<p>ZF3R0-FHED2-M80TY-8QYGC-NPKYF</p>
+<p>YF390-0HF8P-M81RQ-2DXQE-M2UT6</p>
+<p>ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
+<p><strong>温馨提示：此激活密钥仅用于个人学习研究使用，如用于商业用途，请付费购买密钥。</strong></p>
+<p>正式安装！Yes！</p>
+<p>打开VM16 Pro，选择创建新的虚拟机，在新建虚拟机向导中选择典型，点击下一步。</p>
+<figure data-type="image" tabindex="5"><img src="https://s4.ax1x.com/2022/01/25/7HLELT.png" alt="" loading="lazy"></figure>
+<p>之后选择稍后安装操作系统，<strong>不要选错了，否则会开启简易安装，从而导致安装不成功</strong>，我之前就犯过这个错误，怎么也安装不成功，点击下一步。</p>
+<figure data-type="image" tabindex="6"><img src="https://s4.ax1x.com/2022/01/25/7HOiAe.png" alt="" loading="lazy"></figure>
+<p>之后选择要安装的操作系统，系统选Linux，版本选Ubuntu(NOI Linux 2.0是基于Ubuntu 20.04.1定制的)，点击下一步。</p>
+<figure data-type="image" tabindex="7"><img src="https://s4.ax1x.com/2022/01/25/7HOhUe.png" alt="" loading="lazy"></figure>
+<p>之后为虚拟机命名，名字自己随便起，我这里就起NOI Linux 2.0吧。路径尽量选择系统盘以外的盘符，例如D盘<s>你的系统盘在D盘当我没说</s>，虚拟机是很占空间的，系统盘太满不是好习惯，点击下一步。</p>
+<figure data-type="image" tabindex="8"><img src="https://s4.ax1x.com/2022/01/25/7HXFbT.png" alt="" loading="lazy"></figure>
+<p>选择磁盘容量可以比建议容量大一些，比如我就选择了40GB，存储方式个人比较喜欢单个文件存储。加入你的磁盘空间比较紧张，可以选择20GB容量，如果经常在多台电脑之间移动文件，个人推荐拆分存储，点击下一步。</p>
+<figure data-type="image" tabindex="9"><img src="https://s4.ax1x.com/2022/01/25/7bmz0U.png" alt="" loading="lazy"></figure>
+<p>再次检查配置，没有问题就可以点完成了！</p>
+<figure data-type="image" tabindex="10"><img src="https://s4.ax1x.com/2022/01/25/7bM139.png" alt="" loading="lazy"></figure>
+<p>安装系统需要配置镜像才能启动。在虚拟机页面，点击编辑虚拟机设置，依次点击CD/DVD，使用ISO映像文件，浏览，找到刚刚下载的镜像，点击确定，保存设置。</p>
+<figure data-type="image" tabindex="11"><img src="https://s4.ax1x.com/2022/01/25/7bQ2s1.png" alt="" loading="lazy"></figure>
+<p>终于到了激动人心的开启虚拟机时刻了！等待虚拟机加载片刻，便会跳出安装页面，将语言调整为简体中文，就可以安装了，点击安装Ubuntu。</p>
+<figure data-type="image" tabindex="12"><img src="https://s4.ax1x.com/2022/01/25/7bGKN6.png" alt="" loading="lazy"></figure>
+<p>键盘布局不用改了，就使用默认的Chinese-Chinese就可以了，点击继续。</p>
+<figure data-type="image" tabindex="13"><img src="https://s4.ax1x.com/2022/01/25/7bGv8O.png" alt="" loading="lazy"></figure>
+<p>更新和其他软件时，安装就选正常安装，注意，<strong>一定要勾选掉安装Ubuntu时下载更新，否则需要安装很长时间</strong>，点击继续。</p>
+<figure data-type="image" tabindex="14"><img src="https://s4.ax1x.com/2022/01/25/7bwM1P.png" alt="" loading="lazy"></figure>
+<p>安装类型就选清除整个磁盘安装Ubuntu，毕竟是虚拟机嘛，无所谓了，<strong>如果你要安装双系统用，请不要选择此选项</strong>，点击现在安装。</p>
+<figure data-type="image" tabindex="15"><img src="https://s4.ax1x.com/2022/01/26/7qYU2T.png" alt="" loading="lazy"></figure>
+<p>提示将以下改动写入磁盘吗，点击继续就可以了。</p>
+<figure data-type="image" tabindex="16"><img src="https://s4.ax1x.com/2022/01/26/7qYjsg.png" alt="" loading="lazy"></figure>
+<p>提示您在什么地方时，点击中国所在的位置，提示shanghai就成功了，点击继续。</p>
+<figure data-type="image" tabindex="17"><img src="https://s4.ax1x.com/2022/01/26/7qUtPI.png" alt="" loading="lazy"></figure>
+<p>提示您是谁时，输入自己的用户名和密码，不用多讲，自己定，我这里就选noilinux吧。</p>
+<figure data-type="image" tabindex="18"><img src="https://s4.ax1x.com/2022/01/26/7qw92t.png" alt="" loading="lazy"></figure>
+<p>接下来就是安装时间了，等待一会，休息一下吧~</p>
+<figure data-type="image" tabindex="19"><img src="https://s4.ax1x.com/2022/01/26/7q0Ym8.png" alt="" loading="lazy"></figure>
+<p>6个小时以后，终于好了，这时间都能一边慢慢悠悠聊天嗑好几包瓜子了！点击现在重启。</p>
+<figure data-type="image" tabindex="20"><img src="https://s4.ax1x.com/2022/01/26/7L2Vrd.png" alt="" loading="lazy"></figure>
+<p>之后出现一个提示，按下ENTER键就可以了。因为太快了，所以没截到图。</p>
+<p>重启之后，输入用户密码。</p>
+<figure data-type="image" tabindex="21"><img src="https://s4.ax1x.com/2022/01/26/7LRYlD.png" alt="" loading="lazy"></figure>
+<p>大功告成！进入桌面，自此安装部分结束。</p>
+<figure data-type="image" tabindex="22"><img src="https://s4.ax1x.com/2022/01/26/7LRf7n.png" alt="" loading="lazy"></figure>
+<h1 id="noi-linux-20的体验">NOI Linux 2.0的体验</h1>
+<p><strong>如果你只想看NOI Linux 2.0的安装部分，你的阅读可以到此结束了。</strong></p>
+<figure data-type="image" tabindex="23"><img src="https://s4.ax1x.com/2022/01/26/7LWDb9.png" alt="" loading="lazy"></figure>
+<p>但是</p>
 
                 </div>
                 <div class="clear"></div>
@@ -172,7 +247,7 @@
                   
                   <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
                     <a href="https://myqf1234.github.io/post/noilinux2/" class="thumb hover-effect">
-                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.leixue.com%2Fuploads%2F2020%2F07%2FNOI-Linux.png%21760&amp;refer=http%3A%2F%2Fwww.leixue.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1645596327&amp;t=df38fcd1020ce2f4287a45d83b7eac7b');"></span>
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://s4.ax1x.com/2022/01/27/7XaS4H.png');"></span>
                     </a>
                     <div class="info gradient-effect">
                       <time datetime="2022-01-24">2022-01-24</time>
