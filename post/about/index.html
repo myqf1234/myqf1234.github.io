@@ -14,6 +14,7 @@
 <script src="https://myqf1234.github.io/media/js/view-image.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://myqf1234.github.io/media/js/functions.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta name="referrer" content="never">
     <meta name="description" content="欢迎大家来到这个普普通通OIer的网站，如果大家对我的博文有赞赏或建议，欢迎大家在评论区或联系我，帮助这个blog变得更好，谢谢！😊😊😊
 本人是一位OIer，喜欢OI，研究(折腾)，欢迎各大佬来访互关~😊
@@ -80,7 +81,7 @@
       <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
         <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
           <div class="search-wrapper section">
-            <form id="gridea-search-form" data-update="1643455450494" action="/search/index.html" class="search-form" _lpchecked="1">
+            <form id="gridea-search-form" data-update="1643459566984" action="/search/index.html" class="search-form" _lpchecked="1">
               <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
               <button type="submit" class="submit" aria-label="Submit">
                 <i class="fa fa-search-line"></i>
@@ -139,16 +140,27 @@
               
 
                 <div class="clear"></div>
+
+
             </section>
 
               <div class="clear"></div>
+
               
-            
-              <div id="comments" class="bg-white hosted ">
-                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
-              </div>
-              <div class="clear"></div>
-            
+
+              
+                <div id="vcomments"></div>
+               <script>
+                new Valine({
+                el: '#vcomments',
+                appId: 'yALPN5p0IgWimg0oeGQLOcKX-gzGzoHsz',
+                appKey: 'OgzyaodKaRs18hijjwdxeUfo'
+              })
+    </script>
+              
+              
+              <div id="vcomments"></div>
+              
 
             </div>
           </div>
