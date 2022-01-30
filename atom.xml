@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YU Wikis</title>
-    <updated>2022-01-30T02:39:44.021Z</updated>
+    <updated>2022-01-30T02:50:01.677Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://myqf1234.github.io/images/avatar.png</logo>
     <icon>https://myqf1234.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, YU Wikis</rights>
+    <entry>
+        <title type="html"><![CDATA[公告：网站采用Netlify加速，评论系统由Gitalk转为Valine，代码高亮启用]]></title>
+        <id>https://myqf1234.github.io/post/announcement/</id>
+        <link href="https://myqf1234.github.io/post/announcement/">
+        </link>
+        <updated>2022-01-30T02:44:31.000Z</updated>
+        <content type="html"><![CDATA[<p>网站现在采用Netlify加速，二级域名从&lt;myqf1234.github.io&gt;变为&lt;yuwikis.netlify.app&gt;，评论系统由Gitalk转为Valine，代码高亮启用了，挂了的时候联系<a href="https://yuwikis.com/post/about/">我</a>。</p>
+<p>2022/1/24：</p>
+<p>YUBlog正式更名为YU Wikis。同时网站域名由<a href="https://myqf1234.github.io">https://myqf1234.github.io</a>正式更名为<a href="https://yuwikis.com">https://yuwikis.com</a>。如有疑问，欢迎在评论区留言或联系<a href="https://yuwikis.com/post/about/">YU Wikis</a>。</p>
+<p>此公告。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NOI Linux 2.0的安装+体验]]></title>
         <id>https://myqf1234.github.io/post/noilinux2/</id>
@@ -110,16 +122,6 @@
 </blockquote>
 <figure data-type="image" tabindex="36"><img src="https://s4.ax1x.com/2022/01/29/HSnMeH.png" alt="" loading="lazy"></figure>
 <p>NOI Linux 2.0完全去除了上一版本中的GUIDE IDE，加入了，Subline Text，Code::Blocks ，VSCode，Emacs等多种文本编辑器和IDE，并且系统版本直接从Ubuntu14.04升级到了Ubuntu20.04，并且支持C++14新语法，g++编译器版本从4.8.0升级到了9.3.0，Code::Blocks的新时代开始了！<s>Dev-C++：你忽视我的存在了吗</s></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[YUBlog更名为YU Wikis]]></title>
-        <id>https://myqf1234.github.io/post/announcement/</id>
-        <link href="https://myqf1234.github.io/post/announcement/">
-        </link>
-        <updated>2022-01-24T04:18:01.000Z</updated>
-        <content type="html"><![CDATA[<p>YUBlog正式更名为YU Wikis。同时网站域名由<a href="https://myqf1234.github.io">https://myqf1234.github.io</a>正式更名为<a href="https://yuwikis.com">https://yuwikis.com</a>。如有疑问，欢迎在评论区留言或联系<a href="https://yuwikis.com/post/about/">YU Wikis</a>。</p>
-<p>此公告。</p>
 ]]></content>
     </entry>
     <entry>
