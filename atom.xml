@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YU Wikis</title>
-    <updated>2022-01-30T04:23:17.289Z</updated>
+    <updated>2022-01-30T04:27:39.048Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -16,8 +16,8 @@
         <link href="https://myqf1234.github.io/post/highlight-tester/">
         </link>
         <updated>2022-01-30T03:01:38.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>本文为代码高亮测试文章，以下测试代码均为可高亮，如果代码高亮未正常工作，请及时联系<img src="https://yuwikis.com/post/about" alt="我" loading="lazy">指出，以免对您及其他读者造成不必要的麻烦。</strong></p>
-<p>以下测试代码源自<img src="https://highlightjs.org/" alt="highlight.js" loading="lazy">。</p>
+        <content type="html"><![CDATA[<p><strong>本文为代码高亮测试文章，以下测试代码均为可高亮，如果代码高亮未正常工作，请及时联系<a href="https://yuwikis.com/post/about">我</a>指出，以免对您及其他读者造成不必要的麻烦。</strong></p>
+<p>以下测试代码源自<a href="https://highlightjs.org/">highlight.js</a>。</p>
 <p>C++:</p>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 
