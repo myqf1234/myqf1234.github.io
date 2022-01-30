@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea测试文章 | YU Wikis</title>
+<title>网站代码高亮测试文章 | YU Wikis</title>
 <meta name="description" content="一位普通的OIer" />
 <link rel="shortcut icon" href="https://myqf1234.github.io/favicon.ico">
 <link rel="stylesheet" href="https://myqf1234.github.io/styles/main.css">
@@ -16,9 +16,13 @@
 <script src="https://myqf1234.github.io/media/js/functions.js"></script>
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="tester
-" />
-    <meta name="keywords" content="Gridea" />
+    <meta name="description" content="本文为代码高亮测试文章，以下测试代码均为可高亮，如果代码高亮未正常工作，请及时联系指出，以免对您及其他读者造成不必要的麻烦。
+以下测试代码源自。
+C++:
+#include &lt;iostream&gt;
+
+int main(int ar..." />
+    <meta name="keywords" content="测试" />
     <script src="https://myqf1234.github.io/media/js/waterfall.min.js"></script>
     <script src="https://myqf1234.github.io/media/js/prism.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://myqf1234.github.io/highlight/styles/monokai-sublime.min.css">
@@ -82,7 +86,7 @@
       <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
         <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
           <div class="search-wrapper section">
-            <form id="gridea-search-form" data-update="1643510996178" action="/search/index.html" class="search-form" _lpchecked="1">
+            <form id="gridea-search-form" data-update="1643516591797" action="/search/index.html" class="search-form" _lpchecked="1">
               <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
               <button type="submit" class="submit" aria-label="Submit">
                 <i class="fa fa-search-line"></i>
@@ -94,23 +98,23 @@
       <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
         <div class="center content">
-          <div class="featured-image cover" style="background-image: url('/media/images/gridea.jpg');">
+          <div class="featured-image cover" style="background-image: url('https://s4.ax1x.com/2022/01/30/H90tjU.jpg');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2022-01-24"><i class="fa fa-calendar"></i><span class="lately">6 天前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2022-01-30"><i class="fa fa-calendar"></i><span class="lately">1 小时前</span></time>
               
-              <a href="https://myqf1234.github.io/post/gridea-test/#comments" class="comments meta-info" title="">
-                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/gridea-test/"> </span>
+              <a href="https://myqf1234.github.io/post/highlight-tester/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/highlight-tester/"> </span>
               </a>
-              <span id="/gridea-test/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              <span id="/highlight-tester/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
               
             </div>
             <div class="info">
               <div class="tags ">
                 
-                      <a href="https://myqf1234.github.io/tag/gridea/" class="ctag ctag-0 ctag-gridea" aria-label="">Gridea</a>
+                      <a href="https://myqf1234.github.io/tag/test/" class="ctag ctag-0 ctag-test" aria-label="">测试</a>
                     
               </div>
-              <h1 class="title ularge white bold">Gridea测试文章</h1>
+              <h1 class="title ularge white bold">网站代码高亮测试文章</h1>
             </div>
           </div>
         </div>  
@@ -120,7 +124,272 @@
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <p>tester</p>
+                  <p><strong>本文为代码高亮测试文章，以下测试代码均为可高亮，如果代码高亮未正常工作，请及时联系<img src="https://yuwikis.com/post/about" alt="我" loading="lazy">指出，以免对您及其他读者造成不必要的麻烦。</strong></p>
+<p>以下测试代码源自<img src="https://highlightjs.org/" alt="highlight.js" loading="lazy">。</p>
+<p>C++:</p>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+
+int main(int argc, char *argv[]) {
+
+  /* An annoying &quot;Hello World&quot; example */
+  for (auto i = 0; i &lt; 0xFFFF; i++)
+    cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; endl;
+
+  char c = '\n';
+  unordered_map &lt;string, vector&lt;string&gt; &gt; m;
+  m[&quot;key&quot;] = &quot;\\\\&quot;; // this is an error
+
+  return -2e3 + 12l;
+}
+</code></pre>
+<p>Python:</p>
+<pre><code class="language-python">@requires_authorization(roles=[&quot;ADMIN&quot;])
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 &gt; param2: # interesting
+        print 'Gre\'ater'
+    return (param2 - param1 + 1 + 0b10l) or None
+
+class SomeClass:
+    pass
+
+&gt;&gt;&gt; message = '''interpreter
+... prompt'''
+</code></pre>
+<p>XML:</p>
+<pre><code class="language-xml">&lt;!DOCTYPE html&gt;
+&lt;title&gt;Title&lt;/title&gt;
+
+&lt;style&gt;body {width: 500px;}&lt;/style&gt;
+
+&lt;script type=&quot;application/javascript&quot;&gt;
+  function $init() {return true;}
+&lt;/script&gt;
+
+&lt;body&gt;
+  &lt;p checked class=&quot;title&quot; id='title'&gt;Title&lt;/p&gt;
+  &lt;!-- here goes the rest of the page --&gt;
+&lt;/body&gt;
+</code></pre>
+<p>Javascript:</p>
+<pre><code class="language-javascript">function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class=&quot;${cls}&quot;`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i &lt; classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+
+  return (
+    &lt;div&gt;
+      &lt;web-component&gt;{block}&lt;/web-component&gt;
+    &lt;/div&gt;
+  )
+}
+
+export  $initHighlight;
+</code></pre>
+<p>SQL:</p>
+<pre><code class="language-sql">CREATE TABLE &quot;topic&quot; (
+    &quot;id&quot; integer NOT NULL PRIMARY KEY,
+    &quot;forum_id&quot; integer NOT NULL,
+    &quot;subject&quot; varchar(255) NOT NULL
+);
+ALTER TABLE &quot;topic&quot;
+ADD CONSTRAINT forum_id FOREIGN KEY (&quot;forum_id&quot;)
+REFERENCES &quot;forum&quot; (&quot;id&quot;);
+
+-- Initials
+insert into &quot;topic&quot; (&quot;forum_id&quot;, &quot;subject&quot;)
+values (2, 'D''artagnian');
+</code></pre>
+<p>C#:</p>
+<pre><code class="language-csharp">using System.IO.Compression;
+
+#pragma warning disable 414, 3021
+
+namespace MyApplication
+{
+    [Obsolete(&quot;...&quot;)]
+    class Program : IInterface
+    {
+        public static List&lt;int&gt; JustDoIt(int count)
+        {
+            Span&lt;int&gt; numbers = stackalloc int[length];
+            Console.WriteLine($&quot;Hello {Name}!&quot;);
+            return new List&lt;int&gt;(new int[] { 1, 2, 3 })
+        }
+    }
+}
+</code></pre>
+<p>Objective-C:</p>
+<pre><code class="language-objectivec">#import &lt;UIKit/UIKit.h&gt;
+#import &quot;Dependency.h&quot;
+
+@protocol WorldDataSource
+@optional
+- (NSString*)worldName;
+@required
+- (BOOL)allowsToLive;
+@end
+
+@property (nonatomic, readonly) NSString *title;
+- (IBAction) show;
+@end
+</code></pre>
+<p>Java:</p>
+<pre><code class="language-java">/**
+* @author John Smith &lt;john.smith@example.com&gt;
+*/
+package l2f.gameserver.model;
+
+public abstract strictfp class L2Char extends L2Object {
+ public static final Short ERROR = 0x0001;
+
+ public void moveTo(int x, int y, int z) {
+   _ai = null;
+   log(&quot;Should not be called&quot;);
+   if (1 &gt; 5) { // wtf!?
+     return;
+   }
+ }
+}
+</code></pre>
+<p>CSS:</p>
+<pre><code class="language-css">@font-face {
+ font-family: Chunkfive; src: url('Chunkfive.otf');
+}
+
+body, .usertext {
+ color: #F0F0F0; background: #600;
+ font-family: Chunkfive, sans;
+ --heading-1: 30px/32px Helvetica, sans-serif;
+}
+
+@import url(print.css);
+@media print {
+ a[href^=http]::after {
+   content: attr(href)
+ }
+}
+</code></pre>
+<p>Ruby:</p>
+<pre><code class="language-ruby"># The Greeter class
+class Greeter
+ def initialize(name)
+   @name = name.capitalize
+ end
+
+ def salute
+   puts &quot;Hello #{@name}!&quot;
+ end
+end
+
+g = Greeter.new(&quot;world&quot;)
+g.salute
+</code></pre>
+<p>Makefile:</p>
+<pre><code class="language-makefile"># Makefile
+
+BUILDDIR      = _build
+EXTRAS       ?= $(BUILDDIR)/extras
+
+.PHONY: main clean
+
+main:
+   @echo &quot;Building main facility...&quot;
+   build_main $(BUILDDIR)
+
+clean:
+   rm -rf $(BUILDDIR)/*
+</code></pre>
+<p>Go:</p>
+<pre><code class="language-go">package main
+
+import &quot;fmt&quot;
+
+func main() {
+   ch := make(chan float64)
+   ch &lt;- 1.0e10    // magic number
+   x, ok := &lt;- ch
+   defer fmt.Println(`exitting now\`)
+   go println(len(&quot;hello world!&quot;))
+   return
+}
+</code></pre>
+<p>Bash:</p>
+<pre><code class="language-bash">#!/bin/bash
+
+###### CONFIG
+ACCEPTED_HOSTS=&quot;/root/.hag_accepted.conf&quot;
+BE_VERBOSE=false
+
+if [ &quot;$UID&quot; -ne 0 ]
+then
+echo &quot;Superuser rights required&quot;
+exit 2
+fi
+
+genApacheConf(){
+echo -e &quot;# Host ${HOME_DIR}$1/$2 :&quot;
+}
+
+echo '&quot;quoted&quot;' | tr -d \&quot; &gt; text.txt
+</code></pre>
+<p>Rust:</p>
+<pre><code class="language-rust">#[derive(Debug)]
+pub enum State {
+   Start,
+   Transient,
+   Closed,
+}
+
+impl From&lt;&amp;'a str&gt; for State {
+   fn from(s: &amp;'a str) -&gt; Self {
+       match s {
+           &quot;start&quot; =&gt; State::Start,
+           &quot;closed&quot; =&gt; State::Closed,
+           _ =&gt; unreachable!(),
+       }
+   }
+}
+</code></pre>
+<p>TypeScript:</p>
+<pre><code class="language-typescript">class MyClass {
+ public static myValue: string;
+ constructor(init: string) {
+   this.myValue = init;
+ }
+}
+import fs = require(&quot;fs&quot;);
+module MyModule {
+ export interface MyInterface extends Other {
+   myProperty: any;
+ }
+}
+declare magicNumber number;
+myArray.forEach(() =&gt; { }); // fat arrow syntax
+</code></pre>
+<p>JSON:</p>
+<pre><code class="language-json">[
+ {
+   &quot;title&quot;: &quot;apples&quot;,
+   &quot;count&quot;: [12000, 20000],
+   &quot;description&quot;: {&quot;text&quot;: &quot;...&quot;, &quot;sensitive&quot;: false}
+ },
+ {
+   &quot;title&quot;: &quot;oranges&quot;,
+   &quot;count&quot;: [17500, null],
+   &quot;description&quot;: {&quot;text&quot;: &quot;...&quot;, &quot;sensitive&quot;: false}
+ }
+]
+</code></pre>
+<p><s>好多语言我都没有听说过</s></p>
 
                 </div>
                 <div class="clear"></div>
@@ -130,26 +399,13 @@
 
             <section class="related section">
               
-              <article class="prev grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://s4.ax1x.com/2022/01/27/7X0RG4.png');"></div>
-                 <a href="https://myqf1234.github.io/post/noilinux2/" class="full-link"></a>
-                 <div class="info">
-                  <time datetime="2022-01-24">2022-01-24</time>
-                  <h4 class="title white no-margin">NOI Linux 2.0的安装+体验</h4>
-                </div>
-                 <span class="epcl-button red">
-                  <img src="https://myqf1234.github.io/media/images/left-arrow.svg" width="15" alt="Left Arrow">
-                </span>
-                <div class="overlay"></div>
-              </article>
-              
               
               <article class="next grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://s4.ax1x.com/2022/01/18/7wlQNq.png');"></div>
-                 <a href="https://myqf1234.github.io/post/solution-uva483/" class="full-link"></a>
+                <div class="thumb cover lazy loaded" style="background-image: url('https://img2.baidu.com/it/u=1798417588,3585120280&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG');"></div>
+                 <a href="https://myqf1234.github.io/post/announcement/" class="full-link"></a>
                  <div class="info">
-                  <time datetime="2022-01-20">2022-01-20</time>
-                  <h4 class="title white no-margin">[洛谷]UVA483题解</h4>
+                  <time datetime="2022-01-30">2022-01-30</time>
+                  <h4 class="title white no-margin">公告：网站采用Netlify加速，评论系统由Gitalk转为Valine，代码高亮启用</h4>
                 </div>
                  <span class="epcl-button red">
                   <img src="https://myqf1234.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
@@ -208,6 +464,21 @@ jQuery(document).ready(function($){
                   
                   
                   <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://myqf1234.github.io/post/highlight-tester/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://s4.ax1x.com/2022/01/30/H90tjU.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2022-01-30">2022-01-30</time>
+                      <h4 class="title usmall">
+                        <a href="https://myqf1234.github.io/post/highlight-tester/">网站代码高亮测试文章</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
                     <a href="https://myqf1234.github.io/post/announcement/" class="thumb hover-effect">
                       <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://img2.baidu.com/it/u=1798417588,3585120280&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG');"></span>
                     </a>
@@ -222,7 +493,7 @@ jQuery(document).ready(function($){
                   
                   
                   
-                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
                     <a href="https://myqf1234.github.io/post/noilinux2/" class="thumb hover-effect">
                       <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://s4.ax1x.com/2022/01/27/7X0RG4.png');"></span>
                     </a>
@@ -230,21 +501,6 @@ jQuery(document).ready(function($){
                       <time datetime="2022-01-24">2022-01-24</time>
                       <h4 class="title usmall">
                         <a href="https://myqf1234.github.io/post/noilinux2/">NOI Linux 2.0的安装+体验</a>
-                      </h4>
-                    </div>
-                    <div class="clear"></div>
-                  </article>
-                  
-                  
-                  
-                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
-                    <a href="https://myqf1234.github.io/post/gridea-test/" class="thumb hover-effect">
-                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('/media/images/gridea.jpg');"></span>
-                    </a>
-                    <div class="info gradient-effect">
-                      <time datetime="2022-01-24">2022-01-24</time>
-                      <h4 class="title usmall">
-                        <a href="https://myqf1234.github.io/post/gridea-test/">Gridea测试文章</a>
                       </h4>
                     </div>
                     <div class="clear"></div>
@@ -270,23 +526,25 @@ jQuery(document).ready(function($){
                   <h4 class="widget-title title white bordered">标签云</h4>
                   <div class="tagcloud">
                     
-                      <a href="https://myqf1234.github.io/tag/gridea/" class="ctag ctag-0 ctag-gridea" aria-label="">Gridea</a>
+                      <a href="https://myqf1234.github.io/tag/test/" class="ctag ctag-0 ctag-test" aria-label="">测试</a>
                     
-                      <a href="https://myqf1234.github.io/tag/vm/" class="ctag ctag-1 ctag-vm" aria-label="">虚拟机</a>
+                      <a href="https://myqf1234.github.io/tag/gridea/" class="ctag ctag-1 ctag-gridea" aria-label="">Gridea</a>
                     
-                      <a href="https://myqf1234.github.io/tag/oi/" class="ctag ctag-2 ctag-oi" aria-label="">OI</a>
+                      <a href="https://myqf1234.github.io/tag/vm/" class="ctag ctag-2 ctag-vm" aria-label="">虚拟机</a>
                     
-                      <a href="https://myqf1234.github.io/tag/linux/" class="ctag ctag-3 ctag-linux" aria-label="">Linux</a>
+                      <a href="https://myqf1234.github.io/tag/oi/" class="ctag ctag-3 ctag-oi" aria-label="">OI</a>
                     
-                      <a href="https://myqf1234.github.io/tag/c-cpp/" class="ctag ctag-4 ctag-c-cpp" aria-label="">C/C++</a>
+                      <a href="https://myqf1234.github.io/tag/linux/" class="ctag ctag-4 ctag-linux" aria-label="">Linux</a>
                     
-                      <a href="https://myqf1234.github.io/tag/luogu/" class="ctag ctag-5 ctag-luogu" aria-label="">洛谷</a>
+                      <a href="https://myqf1234.github.io/tag/c-cpp/" class="ctag ctag-5 ctag-c-cpp" aria-label="">C/C++</a>
                     
-                      <a href="https://myqf1234.github.io/tag/solution/" class="ctag ctag-6 ctag-solution" aria-label="">题解</a>
+                      <a href="https://myqf1234.github.io/tag/luogu/" class="ctag ctag-6 ctag-luogu" aria-label="">洛谷</a>
                     
-                      <a href="https://myqf1234.github.io/tag/markdown/" class="ctag ctag-7 ctag-markdown" aria-label="">Markdown</a>
+                      <a href="https://myqf1234.github.io/tag/solution/" class="ctag ctag-7 ctag-solution" aria-label="">题解</a>
                     
-                      <a href="https://myqf1234.github.io/tag/technical/" class="ctag ctag-8 ctag-technical" aria-label="">教程</a>
+                      <a href="https://myqf1234.github.io/tag/markdown/" class="ctag ctag-8 ctag-markdown" aria-label="">Markdown</a>
+                    
+                      <a href="https://myqf1234.github.io/tag/technical/" class="ctag ctag-9 ctag-technical" aria-label="">教程</a>
                     
                   </div>
                   <div class="clear"></div>
