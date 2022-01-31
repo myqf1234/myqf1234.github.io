@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YU Wikis</title>
-    <updated>2022-01-31T03:04:09.347Z</updated>
+    <updated>2022-01-31T03:08:00.533Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2022, YU Wikis</rights>
     <entry>
         <title type="html"><![CDATA[网站KaTeX渲染测试文章]]></title>
-        <id>https://myqf1234.github.io/post/katex tester/</id>
-        <link href="https://myqf1234.github.io/post/katex tester/">
+        <id>https://myqf1234.github.io/post/katex-tester/</id>
+        <link href="https://myqf1234.github.io/post/katex-tester/">
         </link>
         <updated>2022-01-31T02:54:57.000Z</updated>
         <content type="html"><![CDATA[<p><strong>本文为KaTeX数学公式渲染测试文章，以下数学公式均可渲染，如果KaTeX数学公式渲染未正常工作，请及时联系<a href="https://yuwikis.com/post/about">我</a>指出，以免对您及其他读者造成不必要的麻烦。</strong></p>
