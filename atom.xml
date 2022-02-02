@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myqf1234.github.io</id>
     <title>YU Wikis</title>
-    <updated>2022-02-02T12:18:12.668Z</updated>
+    <updated>2022-02-02T12:22:19.888Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myqf1234.github.io"/>
     <link rel="self" href="https://myqf1234.github.io/atom.xml"/>
@@ -16,8 +16,14 @@
         <link href="https://myqf1234.github.io/post/subsites/">
         </link>
         <updated>2022-02-02T12:16:40.000Z</updated>
-        <content type="html"><![CDATA[<p>敬请期待~</p>
-<!--more-->]]></content>
+        <summary type="html"><![CDATA[<p><strong>以下为<a href="https://yuwikis.com">YU Wikis</a>网站的子站，欢迎到子站来访。</strong></p>
+<p>已开通子站列表：</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>以下为<a href="https://yuwikis.com">YU Wikis</a>网站的子站，欢迎到子站来访。</strong></p>
+<p>已开通子站列表：</p>
+<!--more-->
+<p>洛谷博客：<a href="https://385165.blog.luogu.org/">https://385165.blog.luogu.org/</a></p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[网站KaTeX渲染测试文章]]></title>
